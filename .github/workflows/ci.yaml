@@ -12,13 +12,15 @@ on:
       - 'k8s/**'
       - 'README.md'
 
+defaults:
+  run:
+    working-directory: ./GoWebApp
+
+
 jobs:
 
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./GoWebApp
 
     steps:
     - name: Checkout repository
