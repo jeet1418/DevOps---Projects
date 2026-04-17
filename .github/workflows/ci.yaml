@@ -8,9 +8,10 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'helm/**'
-      - 'k8s/**'
-      - 'README.md'
+      - './GoWebApp/helm/**'
+      - './GoWebApp/k8s/**'
+      - './GoWebApp/README.md'
+      - 'Readme.md'
 
 defaults:
   run:
